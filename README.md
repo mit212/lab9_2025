@@ -1,7 +1,7 @@
 # Lab 9: Machine Learning
 
 2.12/2.120 Intro to Robotics  
-Spring 2024[^1]
+Spring 2025[^1]
 
 <details>
   <summary>Table of Contents</summary>
@@ -140,4 +140,5 @@ Please compile all your screenshots and answers in a PDF and upload it to Canvas
 
 [^1]: Version 1 - 2020: Jerry Ng, Rachel Hoffman-Bice, Steven Yeung, and Kamal Youcef-Toumi  
   Version 2 - 2021: Phillip Daniel  
-  Version 3 - 2024: Jinger Chong
+  Version 3 - 2024: Jinger Chong  
+  Version 4 - 2025: Roberto Bolli, Kaleb Blake
