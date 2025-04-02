@@ -32,7 +32,7 @@ To install Tensorflow, enter `pip3 install tensorflow` in your terminal.
 
 ## 2 Support Vector Machine (SVM)
 
-As you may recall from lecture, SVMs is a suprevised learning method that can be used to separate data based on features. A support vector is a vector that essentially draws the boundaries between these classes-based training using known, labeled data points.
+As you may recall from lecture, SVM is a suprevised learning method that can be used to separate data based on features. A support vector is a vector that essentially draws the boundaries between classes based on known, labeled data points.
 
 ### 2.1 Linearly Separable Case
 
