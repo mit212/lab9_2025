@@ -74,7 +74,7 @@ Now, change `p1d` and `p1e` to `True` and run the code again. In this section, i
 
 The `C` parameter trades off correct classification of training examples against maximization of the decision function’s margin. For larger values of `C`, a smaller margin will be accepted if the decision function is better at classifying all training points correctly. A lower `C` will encourage a larger margin, and therefore a simpler decision function, at the cost of training accuracy. In other words `C` behaves as a regularization parameter in the SVM.
 
-By default `C` is set to 1 and `gamma` is set to 'scale' which means it uses `1 / (nfeatures * X.var())` as the value of `gamma`.
+By default `C` is set to 1 and `gamma` is set to 'scale' which means `gamma = 1 / (nfeatures * X.var())`.
 
 Here you will see an additional data point indicated by a + sign. Although the point appears to be directly between the four clusters of data, the SVM has classified it as "blue". Why is that?
 
@@ -104,7 +104,7 @@ We have provided you a classic *hello world* example of NNs used to classify han
 
 A window will show up, there are two sets of accuracy over *epochs*, one for the training data and the other for the testing data. As the epoch proceeds, we can see that the accuracies in both the training set and the test set increase as expected. Notice this is an ideal case. Overfitting could happen if the epoch number is set too high and under-fitting could happen when the epoch number is too low. Try modifying the code to use an epoch number larger than 5.
 
-Take a closer look into the code. In the [previous section](#12-tensorflow) we have installed the Tensorflow library. It is an open source library developed by Google for convenient and efficient deployment of common machine learning techniques. Keras is a NN library that is built on Tensorflow. Some background information: An alternative library is Pytorch, developed by Microsoft and Facebook, feel free to implement with both libraries and make a comparison. In 2.12, we will stick with Tensorflow.
+Take a closer look into the code. In the [previous section](#12-tensorflow) we have installed the Tensorflow library. It is an open source library developed by Google for convenient and efficient deployment of common machine learning techniques. Keras is a NN library that is built on Tensorflow. Some background information: An alternative library is Pytorch, developed by Microsoft and Facebook; feel free to implement with both libraries and make a comparison. In 2.12, we will stick with Tensorflow.
 
 In this lab, we use the [MNIST image set](https://paperswithcode.com/dataset/mnist), which is a set of handwritten images of numbers that are correctly labelled. Each image contains 28 × 28 pixels. In this script, we use 60,000 images to train our network and 10,000 to test the network. The 28 × 28 pixels are converted to a single array, which is then fed through the NN, where the trained `y` value is the number corresponding to the image.
 
