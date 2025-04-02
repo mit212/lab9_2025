@@ -46,7 +46,7 @@ clf = svm.LinearSCV() # creates a Linear SCV class
 clf.fit(data, val)  # fits the data with and their labels (val)
                     # using a SVM with linear kernel
 ```
-the first command makes `clf` an instance of the `LinearSCV` class and the second command uses the fit method to generate a support vector that separates the `(x,y)` data points based on known their value/classification. In this case, if you see in `svm/data_a.csv` the red points in the bottom left corner are classified as a `0` and the blue points are classified as a `1`.
+The first command makes `clf` an instance of the `LinearSCV` class and the second command uses the fit method to generate a support vector that separates the `(x,y)` data points based on known their value/classification. In this case, if you see in `svm/data_a.csv` the red points in the bottom left corner are classified as a `0` and the blue points are classified as a `1`.
 
 After the data has been fitted, the SVM is used to predict the classification of two additional test points, plotted with + signs. You should see that they both appear blue, meaning the SVM classified those data parts as most likely belonging to the `1` label.
 
@@ -58,7 +58,7 @@ Now, set `p1a`, `p1b` and, `p1c` to `True` at the top and run `p1abc.py`. You sh
 
 ### 2.2 Nonlinear SVM
 
-Now, open `svn/p1def.py`. At the top you will notice three boolean variables, `p1d`, `p1e`, `p1f`. For now, please set `p1e` and `p1f` to `False` and run the code. This first section is for data visualization. You should see a figure pop up with a bunch of red data and a bunch of blue data in distinct groups. Now here it can be fairly obvious that a simple line will not separate the data. This is where using different kernels comes in to play!
+Now, open `svm/p1def.py`. At the top you will notice three boolean variables, `p1d`, `p1e`, `p1f`. For now, please set `p1e` and `p1f` to `False` and run the code. This first section is for data visualization. You should see a figure pop up with a bunch of red data and a bunch of blue data in distinct groups. Now here it can be fairly obvious that a simple line will not separate the data. This is where using different kernels comes in to play!
 
 The full definition of the SVC method with its default values is as follows and can be found [here](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html).
 ```
@@ -70,9 +70,9 @@ class sklearn.svm.SVC(*, C=1.0, kernel='rbf', degree=3, gamma='scale',
 
 We don't often need to deal with ALL of these values, which is why we start off just using the defaults. In line `46` of the code we simply have `clf = svm.SVC()`. This means that all of the default parameters are used. Depending on the chosen kernel, only certain parameters are actually used by the method. For example `gamma` is not used if the kernel is linear. Don’t worry too much about this now. Check out the above link if you want to see the definition of the class and learn a little more.
 
-Now, change `p1d` and `p1e` to `True` and run the code again. In this section, instead of using the `svm.LinearSVC` method, we are using the `svm.SVC` method to fit our data. By default, the `svm.SVC` method uses a radial basis function as its kernel and it has two parameters, in this case `gamma` and `C`. The `gamma` parameter defines how far the influence of a single training example reaches, with low values meaning far and high values meaning close. The `gamma` parameters can be seen as the inverse of the radius of influence of samples selected by the model as support vectors.
+Now, change `p1d` and `p1e` to `True` and run the code again. In this section, instead of using the `svm.LinearSVC` method, we are using the `svm.SVC` method to fit our data. By default, the `svm.SVC` method uses a radial basis function as its kernel and it has two parameters, in this case `gamma` and `C`. The `gamma` parameter defines how far the influence of a single training example reaches, with low values meaning far and high values meaning close. It can be seen as the inverse of the radius of influence of samples selected by the model as support vectors.
 
-The `C` parameter trades off correct classification of training examples against maximization of the decision function’s margin. For larger values of `C`, a smaller margin will be accepted if the decision function is better at classifying all training points correctly. A lower `C` will encourage a larger margin, therefore a simpler decision function, at the cost of training accuracy. In other words `C` behaves as a regularization parameter in the SVM.
+The `C` parameter trades off correct classification of training examples against maximization of the decision function’s margin. For larger values of `C`, a smaller margin will be accepted if the decision function is better at classifying all training points correctly. A lower `C` will encourage a larger margin, and therefore a simpler decision function, at the cost of training accuracy. In other words `C` behaves as a regularization parameter in the SVM.
 
 By default `C` is set to 1 and `gamma` is set to 'scale' which means it uses `1 / (nfeatures * X.var())` as the value of `gamma`.
 
