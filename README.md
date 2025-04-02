@@ -14,7 +14,7 @@ Spring 2025[^1]
   - [2.2 Nonlinear SVM](#22-nonlinear-svm)
 - [3 Neural Network (NN)](#3-neural-network-nn)
 - [4 Convolutional Neural Network (CNN)](#4-convolutional-neural-network-cnn)
-- [5 Submission and Feedback Form](#5-submission-and-feedback-form)
+- [5 Submission to Canvas](#5-submission-to-canvas)
 
 </details>
 
@@ -134,7 +134,7 @@ Click the bracket `[ ]` in front of each code block sequentially to run the code
 |:---------------------------------------------------|
 | At which stage does *convolution* come in? |
 
-## 5 Submission and Feedback Form
+## 5 Submission to Canvas
 
 Please compile all your screenshots and answers in a PDF and upload it to Canvas. You should see an assignment called "Lab 9: Machine Learning".
 
