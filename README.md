@@ -18,7 +18,7 @@ Spring 2025[^1]
 
 </details>
 
-In this lab, you will experiment with machine learning techniques on your own. Please submit a PDF of the screenshots and answers on Canvas **by Sunday, April 13, 11:59pm**. If you have any questions, feel free to reach out to the staff on Piazza.
+In this lab, you will experiment with machine learning techniques on your own. Please submit a PDF of the screenshots and answers on Canvas **by Sunday, April 13, 11:59pm**, under the "Lab 9: Machine Learning" assignment. If you have any questions, feel free to reach out to the staff on Piazza.
 
 ## 1 Software Set Up
 
@@ -136,7 +136,7 @@ Click the bracket `[ ]` in front of each code block sequentially to run the code
 
 ## 5 Submission and Feedback Form
 
-Please compile all your screenshots and answers in a PDF and upload it to Canvas.
+Please compile all your screenshots and answers in a PDF and upload it to Canvas. You should see an assignment called "Lab 9: Machine Learning".
 
 [^1]: Version 1 - 2020: Jerry Ng, Rachel Hoffman-Bice, Steven Yeung, and Kamal Youcef-Toumi  
   Version 2 - 2021: Phillip Daniel  
