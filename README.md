@@ -136,7 +136,7 @@ Click the bracket `[ ]` in front of each code block sequentially to run the code
 
 ## 5 Submission to Canvas
 
-Please compile all your screenshots and answers in a PDF and upload it to Canvas. You should see an assignment called "Lab 9: Machine Learning".
+Please compile all your screenshots and answers in a PDF and upload it to the "Lab 9: Machine Learning" assignment on Canvas.
 
 [^1]: Version 1 - 2020: Jerry Ng, Rachel Hoffman-Bice, Steven Yeung, and Kamal Youcef-Toumi  
   Version 2 - 2021: Phillip Daniel  
