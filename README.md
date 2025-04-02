@@ -40,10 +40,10 @@ First, open `svm/p1abc.py`. At the top you will notice three boolean variables, 
 
 Now, set both `p1a` and `p1b` to be `True`. This is where we actually train our data.
 
-Within the `p1b` if statement starting line `44`, you will see the following:
+Within the `p1b` if statement starting on line `44`, you will see the following:
 ```
 clf = svm.LinearSCV() # creates a Linear SCV class
-clf.fit (data, val) # fits the data with and their labels (val)
+clf.fit(data, val) # fits the data with and their labels (val)
                     # using a SVM with linear kernel
 ```
 the first command makes `clf` an instance of the `LinearSCV` class and the second command uses the fit method to generate a support vector that separates the `(x,y)` data points based on known their value/classification. In this case, if you see in `svm/data_a.csv` the red points in the bottom left corner are classified as a `0` and the blue points are classified as a `1`.
