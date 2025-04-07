@@ -27,7 +27,7 @@ def plotpointtest(point, label = None):
 	else:
 		plt.plot(point[0],point[1],'g')
 
-with open('svm/data_a.csv',newline = '') as csvfile:
+with open('data_a.csv',newline = '') as csvfile:
 	reader = csv.reader(csvfile, delimiter = ',', quotechar = '|')
 	for row in reader:
 		x.append(float(row[0]))
