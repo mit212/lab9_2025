@@ -110,7 +110,7 @@ In this lab, we use the [MNIST image set](https://paperswithcode.com/dataset/mni
 
 Here, we use two layers of neurons, with a *sigmoid* and a *softmax* activation function. There are a lot of other activation functions, such as *relu* and *tanh*. Give them a try and see how that changes the result. We also use *stochastic gradient decent* to find our global minimum. Alternative optimizers such as *adam* and *adagrad* are also included in Keras. A cool comparison of their performances can be found [here](https://mlfromscratch.com/optimizers-explained/).
 
-Eventually, we give each input image 10 scores based on the output of the last layer of neurons. These 10 scores are the probabilities, corresponding to the numbers 0-9, of the input image being a particular number. These are evaluated with a mathematical technique called *cross-entropy*. The index with the highest probability is the number predicted by the image.
+Eventually, we give each input image 10 scores based on the output of the last layer of neurons. These 10 scores are the probabilities, corresponding to the numbers 0-9, of the input image being the corresponding number. These are evaluated with a mathematical technique called *cross-entropy*. The index with the highest probability is the number predicted by the image.
 
 | :question: QUESTION 5 :question:   |
 |:---------------------------------------------------|
