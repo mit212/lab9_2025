@@ -58,7 +58,7 @@ Now, set `p1a`, `p1b` and, `p1c` to `True` at the top and run `p1abc.py`. You sh
 
 ### 2.2 Nonlinear SVM
 
-Now, open `svm/p1def.py`. At the top you will notice three boolean variables, `p1d`, `p1e`, `p1f`. For now, please set `p1e` and `p1f` to `False` and run the code. This first section is for data visualization. You should see a figure pop up with a bunch of red data and a bunch of blue data in distinct groups. It is fairly obvious that a simple line will not separate the data. This is where using different kernels comes into play!
+Now, open `svm/p1def.py`. At the top you will notice three boolean variables, `p1d`, `p1e`, `p1f`. For now, please set `p1d` to `True` and `p1e` and `p1f` to `False`, and run the code. This first section is for data visualization. You should see a figure pop up with a bunch of red data and a bunch of blue data in distinct groups. It is fairly obvious that a simple line will not separate the data. This is where using different kernels comes into play!
 
 The full definition of the SVC method with its default values is as follows and can be found [here](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html).
 ```
@@ -70,13 +70,13 @@ class sklearn.svm.SVC(*, C=1.0, kernel='rbf', degree=3, gamma='scale',
 
 We don't often need to deal with ALL of these values, which is why we start off by just using the defaults. In line `46` of the code we simply have `clf = svm.SVC()`. This means that all of the default parameters are used. Depending on the chosen kernel, only certain parameters are actually used by the method. For example `gamma` is not used if the kernel is linear. Don’t worry too much about this now. Check out the above link if you want to see the definition of the class and learn a little more.
 
-Now, change `p1d` and `p1e` to `True` and run the code again. In this section, instead of using the `svm.LinearSVC` method, we are using the `svm.SVC` method to fit our data. By default, the `svm.SVC` method uses a radial basis function as its kernel and it has two parameters, in this case `gamma` and `C`. The `gamma` parameter defines how far the influence of a single training example reaches, with low values meaning far and high values meaning close. It can be seen as the inverse of the radius of influence of samples selected by the model as support vectors.
+Now, change `p1e` to `True` and run the code again. In this section, instead of using the `svm.LinearSVC` method, we are using the `svm.SVC` method to fit our data. By default, the `svm.SVC` method uses a radial basis function as its kernel, and it has two parameters: `gamma` and `C`. The `gamma` parameter defines how far the influence of a single training point reaches, with low values meaning far and high values meaning close. It can be seen as the inverse of the radius of influence of samples selected by the model as support vectors. 
 
 The `C` parameter trades off correct classification of training examples against maximization of the decision function’s margin. For larger values of `C`, a smaller margin will be accepted if the decision function is better at classifying all training points correctly. A lower `C` will encourage a larger margin, and therefore a simpler decision function, at the cost of training accuracy. In other words `C` behaves as a regularization parameter in the SVM.
 
 By default `C` is set to 1 and `gamma` is set to 'scale' which means `gamma = 1 / (nfeatures * X.var())`.
 
-Here you will see an additional data point indicated by a + sign. Although the point appears to be directly between the four clusters of data, the SVM has classified it as "blue". Why is that?
+You will also see an additional data point indicated by a + sign. Although the point appears to be directly between the four clusters of data, the SVM has classified it as "blue". Why is that?
 
 The answer can be revealed by plotting the decision boundaries! Now, change `p1d`, `p1e`, and `p1f` to `True` and run the code again. Here, you should see the same plot but with the decision boundaries dictated by a solid black line, the margins dictated by dashed lines. If you recall, the goal of SVM is to find a decision boundary that maximizes the margins separating the two data sets. You'll also notice that some points are circled with green lines. These points are the support vectors, basically the points that have the most influence on determining the location of the decision boundary. In this case, the decision boundary connects the two blue sections in the middle, while cutting off the red sections from each other.
 
