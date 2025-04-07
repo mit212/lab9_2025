@@ -42,7 +42,7 @@ Now, set both `p1a` and `p1b` to be `True`. This is where we actually train our 
 
 Within the `p1b` if statement starting on line `44`, you will see the following:
 ```
-clf = svm.LinearSCV() # creates a Linear SCV class
+clf = svm.LinearSVC() # creates a Linear SVC class
 clf.fit(data, val)  # fits the data with and their labels (val)
                     # using a SVM with linear kernel
 ```
