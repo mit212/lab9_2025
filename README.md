@@ -58,7 +58,7 @@ Now, set `p1a`, `p1b` and, `p1c` to `True` at the top and run `p1abc.py`. You sh
 
 ### 2.2 Nonlinear SVM
 
-Now, open `svm/p1def.py`. At the top you will notice three boolean variables, `p1d`, `p1e`, `p1f`. For now, please set `p1e` and `p1f` to `False` and run the code. This first section is for data visualization. You should see a figure pop up with a bunch of red data and a bunch of blue data in distinct groups. Now here it can be fairly obvious that a simple line will not separate the data. This is where using different kernels comes in to play!
+Now, open `svm/p1def.py`. At the top you will notice three boolean variables, `p1d`, `p1e`, `p1f`. For now, please set `p1e` and `p1f` to `False` and run the code. This first section is for data visualization. You should see a figure pop up with a bunch of red data and a bunch of blue data in distinct groups. It is fairly obvious that a simple line will not separate the data. This is where using different kernels comes into play!
 
 The full definition of the SVC method with its default values is as follows and can be found [here](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html).
 ```
@@ -68,7 +68,7 @@ class sklearn.svm.SVC(*, C=1.0, kernel='rbf', degree=3, gamma='scale',
     decision_function_shape='ovr', break_ties=False, random_state=None)
 ```
 
-We don't often need to deal with ALL of these values, which is why we start off just using the defaults. In line `46` of the code we simply have `clf = svm.SVC()`. This means that all of the default parameters are used. Depending on the chosen kernel, only certain parameters are actually used by the method. For example `gamma` is not used if the kernel is linear. Don’t worry too much about this now. Check out the above link if you want to see the definition of the class and learn a little more.
+We don't often need to deal with ALL of these values, which is why we start off by just using the defaults. In line `46` of the code we simply have `clf = svm.SVC()`. This means that all of the default parameters are used. Depending on the chosen kernel, only certain parameters are actually used by the method. For example `gamma` is not used if the kernel is linear. Don’t worry too much about this now. Check out the above link if you want to see the definition of the class and learn a little more.
 
 Now, change `p1d` and `p1e` to `True` and run the code again. In this section, instead of using the `svm.LinearSVC` method, we are using the `svm.SVC` method to fit our data. By default, the `svm.SVC` method uses a radial basis function as its kernel and it has two parameters, in this case `gamma` and `C`. The `gamma` parameter defines how far the influence of a single training example reaches, with low values meaning far and high values meaning close. It can be seen as the inverse of the radius of influence of samples selected by the model as support vectors.
 
