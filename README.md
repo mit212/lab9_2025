@@ -80,7 +80,7 @@ You will also see an additional data point indicated by a + sign. Although the p
 
 The answer can be revealed by plotting the decision boundaries! Change `p1f` to `True` and run the code again. You should see the same plot but with the decision boundaries dictated by a solid black line, and the margins dictated by dashed lines. If you recall, the goal of SVM is to find a decision boundary that maximizes the margins separating the two data sets. You'll also notice that some points are circled with green lines. These points are the support vectors - basically, the points that have the most influence on determining the location of the decision boundary. In this case, the decision boundary connects the two blue sections in the middle, while cutting off the red sections from each other.
 
-Try changing the values of C and gamma and see what happens! Start with `gamma` values ranging from `0.1` to `10` and `C` values ranging from `0.1` to `100`. Feel free to explore other values.
+Try changing the values of C and gamma and see what happens. Start with `gamma` values ranging from `0.1` to `10` and `C` values ranging from `0.1` to `100`. Feel free to explore other values!
 
 | :question: QUESTION 2 :question:   |
 |:---------------------------------------------------|
