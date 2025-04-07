@@ -36,7 +36,7 @@ As you may recall from lecture, SVM is a suprevised learning method that can be 
 
 ### 2.1 Linearly Separable Case
 
-First, open `svm/p1abc.py`. At the top you will notice three boolean variables, `p1a`, `p1b`, `p1c`. For now, please set `p1a` to `True` and `p1b` and `p1c` to `False`. Run `p1abc.py`. You should see a figure pop up with a bunch of red data and a bunch of blue data in distinct groups. This is the known and classified data that we will use to train our first SVM.
+First, open `svm/p1abc.py`. At the top you will notice three boolean variables, `p1a`, `p1b`, `p1c`. For now, please set `p1a` to `True`, and `p1b` and `p1c` to `False`. Run `p1abc.py`. You should see a figure pop up with a bunch of red data and a bunch of blue data in distinct groups. This is the known and classified data that we will use to train our first SVM.
 
 Now, set both `p1a` and `p1b` to be `True`. This is where we actually train our data.
 
