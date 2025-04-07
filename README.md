@@ -50,7 +50,7 @@ The first command makes `clf` an instance of the `LinearSVC` class and the secon
 
 After the data has been fitted, the SVM is used to predict the classification of two additional test points, plotted with + signs. You should see that they both appear blue, meaning the SVM classified those data points as most likely belonging to the `1` label.
 
-Now, set `p1a`, `p1b` and, `p1c` to `True` at the top and run `p1abc.py`. You should see mostly the same plot, but now with a black line running through the middle of the graph. This black line is the decision boundary determined by the SVM!
+Now, set `p1a`, `p1b` and, `p1c` to `True` at the top and run `p1abc.py`. You should see mostly the same plot, but now with a black line running through the middle. This black line is the decision boundary determined by the SVM!
 
 | :question: QUESTION 1 :question:   |
 |:---------------------------------------------------|
