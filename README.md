@@ -48,7 +48,7 @@ clf.fit(data, val) # fits the data with and their labels (val)
 ```
 The first command makes `clf` an instance of the `LinearSVC` class and the second command uses the fit method to generate a support vector that separates the `(x,y)` data points based on their known value/classification. In this case, if you look in `svm/data_a.csv`, the red points in the bottom left corner are classified as a `0` and the blue points are classified as a `1`.
 
-After the data has been fitted, the SVM is used to predict the classification of two additional test points, plotted with + signs. You should see that they both appear blue, meaning the SVM classified those data parts as most likely belonging to the `1` label.
+After the data has been fitted, the SVM is used to predict the classification of two additional test points, plotted with + signs. You should see that they both appear blue, meaning the SVM classified those data points as most likely belonging to the `1` label.
 
 Now, set `p1a`, `p1b` and, `p1c` to `True` at the top and run `p1abc.py`. You should see mostly the same plot, but now with a black line running through the middle of the graph. This black line is the decision boundary determined by the SVM!
 
