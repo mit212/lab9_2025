@@ -128,7 +128,7 @@ The notebook features an example of a more advanced machine learning technique t
 
 The code is divided into several parts. The first part involves displaying the image and the mask. As you'd expect, the image is just an image of a pet. The mask is the segmented image that we want to produce with the model. The next part is the construction of the CNN and the fitting of the system. It requires a lot more training than the previous example, 20 epochs instead of 5. The training also requires a lot more compute, which is why we asked you to run it on Colab. After each epoch, there is a callback written to save the weights at the end of the training and also a callback to display the predicted image after training. The last part is the training loss and validation loss after each epoch. There models are saved in the folder.
 
-Click the bracket `[ ]` in front of each code block sequentially to run the code. Make sure to read the descriptions carefully. **Do not worry if you get an error during the `pip install` step. If you get an error importing the pet dataset, change the code to `dataset, info = tfds.load('oxford_iiit_pet:4.*.*', with_info=True)`.**
+Click the bracket `[ ]` in front of each code block sequentially to run the code. Make sure to read the descriptions carefully. **Do not worry if you get an error during the `pip install` step (it may also take a long time). If you get an error importing the pet dataset, change the code to `dataset, info = tfds.load('oxford_iiit_pet:4.*.*', with_info=True)`.**
 
 | :question: QUESTION 7 :question:   |
 |:---------------------------------------------------|
