@@ -46,7 +46,7 @@ clf = svm.LinearSVC() # creates a Linear SVC class
 clf.fit(data, val) # fits the data with and their labels (val)
                    # using an SVM with linear kernel
 ```
-The first command makes `clf` an instance of the `LinearSCV` class and the second command uses the fit method to generate a support vector that separates the `(x,y)` data points based on known their value/classification. In this case, if you see in `svm/data_a.csv` the red points in the bottom left corner are classified as a `0` and the blue points are classified as a `1`.
+The first command makes `clf` an instance of the `LinearSVC` class and the second command uses the fit method to generate a support vector that separates the `(x,y)` data points based on known their value/classification. In this case, if you see in `svm/data_a.csv` the red points in the bottom left corner are classified as a `0` and the blue points are classified as a `1`.
 
 After the data has been fitted, the SVM is used to predict the classification of two additional test points, plotted with + signs. You should see that they both appear blue, meaning the SVM classified those data parts as most likely belonging to the `1` label.
 
