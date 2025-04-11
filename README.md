@@ -30,7 +30,7 @@ To install Scikit-Learn, enter `pip3 install scikit-learn` in your terminal.
 
 ### 1.2 Tensorflow
 
-To install Tensorflow, enter `pip3 install tensorflow` in your terminal.
+To install Tensorflow, enter `pip3 install tensorflow` in your terminal. If this worked for you, then ignore the information below.
 
 If you have a Windows computer and you are running VS Code on your Windows machine then you may have to perform the following extra steps. Alternatively, you can try running this lab through WSL2, in which case you won't have to do these steps.
 
@@ -42,7 +42,7 @@ New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name
 ```
 You can see more information about enabling Windows long paths [here](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell#enable-long-paths-in-windows-10-version-1607-and-later).
 
-Once you confirm you're using a compatible Python version and long paths are enabled, use `pip install "tensorflow<2.11" to install Tensorflow. Open a Python shell in the terminal by entering `python` or `python3`, whichever Python is the correct version to run Tensorflow. Enter `import tensorflow` to test if Tensorflow works. If you get an error related to the Numpy version, you may also have to downgrade your Numpy to a version less than 2.0. Enter the command `python -m pip install "numpy<2"`. Replace `python` with `python3` if you are using Python 3. Test out `import tensorflow` again and make sure it works.
+Once you confirm you're using a compatible Python version and long paths are enabled, use `pip install "tensorflow<2.11"` to install Tensorflow. Open a Python shell in the terminal by entering `python` or `python3`, whichever Python is the correct version to run Tensorflow. Enter `import tensorflow` to test if Tensorflow works. Enter `exit()` or press `Ctrl-D` to exit the Python shell. If you get an error related to the Numpy version, you may also have to downgrade your Numpy to a version less than 2.0. Enter the command `python -m pip install "numpy<2"`. Replace `python` with `python3` if you are using Python 3. Test out `import tensorflow` again and make sure it works.
 
 More information on installing Tensorflow can be seen [here](https://www.tensorflow.org/install/pip#windows-native_1).
 
