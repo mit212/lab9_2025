@@ -22,6 +22,8 @@ In this lab, you will experiment with machine learning techniques on your own. P
 
 ## 1 Software Set Up
 
+Remember you can also use `python -m pip install [library to install]` to install libraries as well, replacing `python` with `python3` if necessary.
+
 ### 1.1 Scikit-Learn
 
 To install Scikit-Learn, enter `pip3 install scikit-learn` in your terminal.
@@ -29,6 +31,20 @@ To install Scikit-Learn, enter `pip3 install scikit-learn` in your terminal.
 ### 1.2 Tensorflow
 
 To install Tensorflow, enter `pip3 install tensorflow` in your terminal.
+
+If you have a Windows computer and you are running VS Code on your Windows machine then you may have to perform the following extra steps. Alternatively, you can try running this lab through WSL2, in which case you won't have to do these steps.
+
+Make sure you are using a Python version that is 3.7 - 3.10. Remeber that you can check your Python version by entering `python -V` or `python3 -V` in the terminal. Anything above Tensorflow 2.10 is not supported on the GPU on Windows Native, and Tensorflow 2.10 is only compatible with Python version 3.7-3.10. See more Tensorflow version compatibility information [here](https://www.tensorflow.org/install/source_windows#cpu). If you need to downgrade your Python version see this [link](https://medium.com/@codelancingg/how-to-downgrade-python-version-fb7b9087e776). 
+
+Once you confirm your Python version is somewhere between 3.7 - 3.10, you will have to enable long paths on Windows. Run Windows Powershell as an administrator and enter the following command:
+```
+New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
+```
+You can see more information about enabling Windows long paths [here](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell#enable-long-paths-in-windows-10-version-1607-and-later).
+
+Once you confirm you're using a compatible Python version and long paths are enabled, use `pip install "tensorflow<2.11" to install Tensorflow. Open a Python shell in the terminal by entering `python` or `python3`, whichever Python is the correct version to run Tensorflow. Enter `import tensorflow` to test if Tensorflow works. If you get an error related to the Numpy version, you may also have to downgrade your Numpy to a version less than 2.0. Enter the command `python -m pip install "numpy<2"`. Replace `python` with `python3` if you are using Python 3. Test out `import tensorflow` again and make sure it works.
+
+More information on installing Tensorflow can be seen [here](https://www.tensorflow.org/install/pip#windows-native_1).
 
 ## 2 Support Vector Machine (SVM)
 
