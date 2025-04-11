@@ -52,7 +52,7 @@ As you may recall from lecture, SVM is a suprevised learning method that can be 
 
 ### 2.1 Linearly Separable Case
 
-First, open `svm/p1abc.py`. At the top you will notice three boolean variables, `p1a`, `p1b`, `p1c`. For now, please set `p1a` to `True`, and `p1b` and `p1c` to `False`. Run `p1abc.py`. You should see a figure pop up with a bunch of red data and a bunch of blue data in distinct groups. This is the known and classified data that we will use to train our first SVM.
+First, open `svm/p1abc.py`. At the top you will notice three boolean variables, `p1a`, `p1b`, `p1c`. For now, please set `p1a` to `True`, and `p1b` and `p1c` to `False`. Make sure you are in the `lab9_2025/svm` directory within your terminal. While in the `lab9_2025` directory, enter `cd svm` to navigate to that directory. Run `p1abc.py`. You should see a figure pop up with a bunch of red data and a bunch of blue data in distinct groups. This is the known and classified data that we will use to train our first SVM.
 
 Now, set both `p1a` and `p1b` to be `True`. This is where we actually train our data.
 
@@ -116,7 +116,7 @@ Next, see what happens if we play with the polynomial kernel. By default, it is 
 
 ## 3 Neural Network (NN)
 
-We have provided you a classic *hello world* example of NNs used to classify handwritten images of numbers to the number in the image. Run `nn/classifier.py`.
+We have provided you a classic *hello world* example of NNs used to classify handwritten images of numbers to the number in the image. Make sure you are in the `lab9_2025` directory. If you are in the `lab9_2025/svm` directory, enter `cd ..` to return to the `lab9_2025` directory. Run `nn/classifier.py`.
 
 A window will show up. There are two sets of accuracy over *epochs*: one for the training data and the other for the testing data. As the epoch proceeds, we can see that the accuracies of both the training set and the test set increase as expected. Note that this is an ideal case. Overfitting could happen if the epoch number is set too high and under-fitting could happen if it is too low. Try modifying the code to use an epoch number larger than 5.
 
