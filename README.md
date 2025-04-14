@@ -32,7 +32,7 @@ To install Scikit-Learn, enter `pip3 install scikit-learn` in your terminal.
 
 To install Tensorflow, enter `pip3 install tensorflow` in your terminal. If this worked for you, then ignore the information below.
 
-If you have a Windows computer and you are running VS Code on your Windows machine then you may have to perform the following extra steps. Alternatively, you can try running this lab through WSL2, in which case you won't have to do these steps.
+If you have a Windows computer and you are running VS Code on your Windows machine, then you may have to perform the following extra steps. Alternatively, you can try running this lab through WSL2, in which case you won't have to do these steps.
 
 Make sure you are using a Python version that is 3.7 - 3.10. Remeber that you can check your Python version by entering `python -V` or `python3 -V` in the terminal. Anything above Tensorflow 2.10 is not supported on the GPU on Windows Native, and Tensorflow 2.10 is only compatible with Python version 3.7-3.10. See more Tensorflow version compatibility information [here](https://www.tensorflow.org/install/source_windows#cpu). If you need to downgrade your Python version see this [link](https://medium.com/@codelancingg/how-to-downgrade-python-version-fb7b9087e776). 
 
