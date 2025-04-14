@@ -22,7 +22,7 @@ In this lab, you will experiment with machine learning techniques on your own. P
 
 ## 1 Software Set Up
 
-Remember if you need to specify which Python to install a library to and `pip` or `pip3` by itself isn't doing so, you can use `python -m pip install [library to install]` to install libraries, replacing `python` with `python3` if necessary.
+If you need to specify which Python version to install a library to, and `pip` or `pip3` by itself isn't doing so, you can use `python -m pip install [library to install]` to install libraries, replacing `python` with `python3` if necessary.
 
 ### 1.1 Scikit-Learn
 
