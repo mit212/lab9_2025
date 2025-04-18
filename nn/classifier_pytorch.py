@@ -48,7 +48,13 @@ test_loader  = DataLoader(test_set,  batch_size=BATCH_SIZE)
 # ---------------------------
 model = nn.Sequential(
     nn.Linear(IMAGE_SIZE, 32),
-    nn.Sigmoid(),                # same activation as original
+    # choose ONE of these …
+    # nn.ReLU(),          # piece‑wise linear (most common)
+    # nn.Tanh(),        # bounded, zero‑centred
+    # nn.LeakyReLU(),   # “fixed” ReLU with small negative slope
+    # nn.ELU(),         # smooth ReLU variant
+    # nn.GELU(),        # popular in transformers
+    nn.Sigmoid(),     # original choice (bounded, not zero‑centred)
     nn.Linear(32, NUM_CLASSES)   # CrossEntropyLoss adds softmax internally
 ).to(device)
 
@@ -56,7 +62,8 @@ model = nn.Sequential(
 # 4.  Loss & Optimizer
 # ---------------------------
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.SGD(model.parameters(), lr=LR)
+optimizer = optim.SGD(model.parameters(), lr=0.01,
+                      momentum=0.9, nesterov=True)
 
 # ---------------------------
 # 5.  Training loop
