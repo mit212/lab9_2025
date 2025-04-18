@@ -32,7 +32,7 @@ To install Scikit-Learn, enter `pip3 install scikit-learn` in your terminal.
 
 To install Tensorflow, enter `pip3 install tensorflow` in your terminal. If this worked for you, then ignore the information below.
 
-**The section below goes through debugging steps to install TensorFlow. If the below doesn't work for you, or if you don't have time, use `classifier_pytorch.py` instead and install the pytorch libraries: `pip install torch` and `pip install torchvision`**
+**The section below goes through debugging steps to install TensorFlow. If the below doesn't work for you, or if you don't have time, use `classifier_pytorch.py` instead and install the pytorch libraries: `pip install torch` and `pip install torchvision`**.
 
 If you have a Windows computer and you are running VS Code on your Windows machine, then you may have to perform the following extra steps. Alternatively, you can try running this lab through WSL2, in which case you won't have to do these steps.
 
