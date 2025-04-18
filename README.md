@@ -32,6 +32,8 @@ To install Scikit-Learn, enter `pip3 install scikit-learn` in your terminal.
 
 To install Tensorflow, enter `pip3 install tensorflow` in your terminal. If this worked for you, then ignore the information below.
 
+**The section below goes through debugging steps to install TensorFlow. If the below doesn't work for you, or if you don't have time, use `classifier_pytorch.py` instead and install the pytorch libraries: `pip install torch` and `pip install torchvision`**
+
 If you have a Windows computer and you are running VS Code on your Windows machine, then you may have to perform the following extra steps. Alternatively, you can try running this lab through WSL2, in which case you won't have to do these steps.
 
 Make sure you are using a Python version that is 3.7 - 3.10. Remeber that you can check your Python version by entering `python -V` or `python3 -V` in the terminal. Anything above Tensorflow 2.10 is not supported on the GPU on Windows Native, and Tensorflow 2.10 is only compatible with Python version 3.7-3.10. See more Tensorflow version compatibility information [here](https://www.tensorflow.org/install/source_windows#cpu). If you need to downgrade your Python version see this [link](https://medium.com/@codelancingg/how-to-downgrade-python-version-fb7b9087e776). 
@@ -117,6 +119,8 @@ Next, see what happens if we play with the polynomial kernel. By default, it is 
 ## 3 Neural Network (NN)
 
 We have provided you a classic *hello world* example of NNs used to classify handwritten images of numbers to the number in the image. Make sure you are in the `lab9_2025` directory. If you are in the `lab9_2025/svm` directory, enter `cd ..` to return to the `lab9_2025` directory. Run `nn/classifier.py`.
+
+**If you installed pytorch instead (see [1.2 Tensorflow](#12-tensorflow)) run `classifier_pytorch.py`.**
 
 A window will show up. There are two sets of accuracy over *epochs*: one for the training data and the other for the testing data. As the epoch proceeds, we can see that the accuracies of both the training set and the test set increase as expected. Note that this is an ideal case. Overfitting could happen if the epoch number is set too high and under-fitting could happen if it is too low. Try modifying the code to use an epoch number larger than 5.
 
